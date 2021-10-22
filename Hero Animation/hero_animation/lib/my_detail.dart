@@ -10,7 +10,7 @@ import './details.dart';
 
 class MyDetail extends StatefulWidget {
   final Details detail;
-  const MyDetail({required Key key, required this.detail}) : super(key: key);
+  const MyDetail(this.detail, {Key? key}) : super(key: key);
   @override
   State<MyDetail> createState() => _MyDetailState();
 }

@@ -49,7 +49,7 @@ class _HeroAnimationState extends State<HeroAnimation> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => MyDetail(detail: cardData[index]),
+            builder: (context) => MyDetail(cardData[index]),
           ),
         );
       },
