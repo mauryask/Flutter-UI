@@ -49,6 +49,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         _animationController.forward();
       }
     });
+
+    _animationController.forward(); // this is used to start the animastion
   }
 
   @override
@@ -64,10 +66,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _animationController
-              .forward(); // this is used to start the animastion
-        },
+        onPressed: () {},
         child: const Icon(Icons.add),
       ),
     );
