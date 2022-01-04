@@ -5,6 +5,8 @@ import 'package:food_delivery_app/screens/restaurant_screen.dart';
 import 'package:food_delivery_app/widgets/rating_stars.dart';
 import 'package:food_delivery_app/widgets/recent_orders.dart';
 
+import 'cart_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
   @override
@@ -32,7 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () => Navigator.push(
+                context, MaterialPageRoute(builder: (_) => const CartScreen())),
             child: Text(
               "Cart (${currentUser.cart.length})",
               style: const TextStyle(
